@@ -4,12 +4,18 @@ import Footer from "./components/Footer";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import PageNotFound from "./components/404";
+import Portfolio from "./components/portfolio";
+import Contact from "./components/contact";
+import Resume from "./components/resume";
 
 function App() {
   return (
     <div>
       <Navbar />
       <Routes>
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
         <Route path="/" element={<Main />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
