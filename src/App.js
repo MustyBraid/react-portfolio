@@ -7,6 +7,7 @@ import PageNotFound from "./components/404";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/contact";
 import Resume from "./components/resume";
+import Landing from "./components/Landing";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/" element={<Main />} />
+        <Route path="/aboutme" element={<Main />} />
+        <Route path="/" element={<Landing />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
